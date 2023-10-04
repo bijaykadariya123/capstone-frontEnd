@@ -1,10 +1,16 @@
 # CapstoneProject-FrontEnd
 
-- **Project Name:** ShoppingCart-Front-End
-- **Project By:** Bijay Kadariya
-- [**LINK TO GITHUB**]()
-- [**LINK TO DEPLOYED WEBSITE**]()
-- **List of Technologies used:** JS, Python, Django, React, HTML, CSS, Node, Neon,Tailwinds
+
+**Summary**
+| Field | Detail |
+|-------|--------|
+| Project Name | Shopping Cart|
+| Developers | Bijay Kadariya |
+| Live Website | https://shopping-cart-p6gf.onrender.com/ |
+| Repo | https://github.com/bijaykadariya123/capstone-frontEnd |
+|List of Technologies | JS, Python, Django, React, HTML, CSS, Node, Neon,Tailwind
+
+
 
 
 ## Description
@@ -12,19 +18,9 @@ Shopping app will allow user to view the Item on collection. It will let user to
 
 
 
-## List of Backend Endpoints
+## User Interface Mockups
+![IndexpageDesktop](https://imgur.com/NdnCh40.png)
+![showpageDesktop](https://imgur.com/EiWCksg.png)
+![Indexpage760](https://imgur.com/Pna2OMv.png)
+![showpage760](https://imgur.com/bkEhLzL.png)
 
-| ENDPOINT   | METHOD | PURPOSE |
-|------------|--------|---------|
-| /          | Get    | Show all Items |
-|/:id        | Get    | Show one Item|
-|/create     | Post   |create a new Item |
-|/update/:id | Put    | Update/edit Item |
-|/delete/:id | Delete | Delete Item|
-
-
-## Mock UP of UI
-![IndexpageDesktop](https://imgur.com/NdnCh40)
-![showpageDesktop](https://imgur.com/EiWCksg)
-![Indexpage760](https://imgur.com/Pna2OMv)
-![showpage760](https://imgur.com/bkEhLzL)
