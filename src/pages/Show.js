@@ -10,7 +10,8 @@ function Show (props){
     <>
         <Nav/>
         <div>
-            <img style={{width:'100px', height:'100px'}} src={item.image} alt ={item.name}/>
+            <img className="w-full transform hover:rotate-12 transition-transform duration-600 cursor-pointer" style={{width:'100px', height:'100px'}} src={item.image} alt ={item.name}/>
+            {/* <img className="w-full animate-spin cursor-pointer" style={{width:'100px', height:'100px'}} src={item.image} alt ={item.name}/> */}
             <h1>Name:{item.name}</h1>
             <h3>Price{item.price}</h3>
             <h3>Year:{item.year}</h3>
@@ -20,7 +21,7 @@ function Show (props){
         <UpdateForm/>
         <div>
             <Form method="post" action={`/delete/${item.id}`}>
-                <button className="px-2 py-1 rounded bg-green-900 hover:bg-green-600">Delete</button>
+                <button className=" cursor-wait px-2 py-1 rounded bg-green-900 hover:bg-green-600">Delete</button>
             </Form>
         </div>
     </>

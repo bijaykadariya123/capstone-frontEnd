@@ -12,22 +12,15 @@ function Index (props){
     return<>
         <Nav/>
         <div  className="formSale">
-            <div>
-                <h2 className='animate-typing text-xl'>Items on Sale</h2>
-               <Carousel className="h-full" images={imagesArray} /> 
+            <div className="carouselContainer">
+                <h2 className='animate-typing text-2xl carouselLabel'>Items on Sale</h2>
+                <Carousel className="h-full" images={imagesArray} /> 
             </div>
-        <Forms/>
-            {/* <div>
-                {items.map((item) => (<Carousel key={item.id} item={item} />))}
-            </div> */}
-            {/* <div>
-                {items.map((item) => <Carousel key={item.id} item={items} />)}
-            </div> */}
-            
-          
+            <Forms className=""/>     
         </div>
             
-        <div>
+        <h1 className="itemList marquee">All Item</h1>
+        <div  className="allItems">
             {items.map((item)=> {return <Post key = {item.id} item={item}/>})} 
         </div>
 

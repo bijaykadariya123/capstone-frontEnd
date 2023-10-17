@@ -1,7 +1,23 @@
-
+/* 
 .carouselImage{
   width:15px;
   height: 100px;
+} */
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: marquee 2.5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 /* Animation for Create new item Form*------------------------------*/
 @keyframes typing {
@@ -42,23 +58,111 @@ body{
   color: white;
 }
 
-.addShopping{
-  width: 2000px;
-}
 
 .animate-typing{
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
 }
-.formSale{
-  flex: 1 1 auto;
+.addShopping{
+  background-image: url("https://motionarray.imgix.net/preview-266066-1vnOmCVvb5-high_0000.jpg?w=660&q=60&fit=max&auto=format");
+  /* opacity: 50%; */
+}
+.formItem h2{
+  text-align: center;
+  font-size: 1.7em;
+
+}
+.createInput{
+  opacity: 60%;
+}
+/* Media query */
+@media only screen and (max-width: 425px) and (min-width:220px){
+  .animate-typing{
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 1.3em; */
+  }
+  .shopify{
+    /* font-size: 1.2em; */
+  }
+  .navBarright{
+    /* font-size: 12px; */
+    padding: 8px;
+  }
+  .shopify{
+    padding-left: 10px;
+  }
+
+  /* Carousel Container */
+  .carouselImage{
+    height: 15.2em;
+  }
+
+
+  .carouselContainer{
+    padding:10px;
+  }
+  .carouselContainer img{
+    border-radius: 15px;
+  }
+ 
+  .addShopping{
+
+    /* margin-top: 1em; */
+    padding:0px 5px 0px 5px
+   
+  }
+
+
+  /* Create FORM */
+
+  .formItem h2{
+    font-size: 1.7em;
+    /* padding-bottom: 15px; */
+  
+  }
+  .inputFields{
+    margin-bottom:-10px;
+    padding: 5px 20px;
+  }
+  .createInput{
+    margin: 0px 60px 0px 60px;
+    opacity: 60%;
+  }
+  .allItems{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    height: 18em;
+    overflow-y: auto;
+  }
+  .itemList{
+    font-size: 2em;
+    /* text-align: center; */
+  }
+  .itemNameIndex{
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .allItemImg{
+    height: 8em;
+    width: 100%;
+    padding: 0 70px 0 70px;;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+
 }
 
 
-/* Media query */
-@media only screen and (max-width: 320px) and (min-width:220px){
-  .animate-typing{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+@media only screen and (max-width: 768px) and (min-width:426px){
+  .formSale{
+    display:grid;
+    grid-template-columns: 2fr 1.5fr;
   }
+  .allItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+
 }
