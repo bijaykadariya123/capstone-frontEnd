@@ -14,9 +14,9 @@ function Index (props){
         <div  className="formSale">
             <div className="carouselContainer">
                 <h2 className='animate-typing text-2xl carouselLabel'>Items on Sale</h2>
-                <Carousel className="h-full" images={imagesArray} /> 
+                <Carousel images={imagesArray} /> 
             </div>
-            <Forms className=""/>     
+            <Forms className="indexFormAll"/>     
         </div>
             
         <h1 className="itemList marquee">All Item</h1>

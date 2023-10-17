@@ -4,12 +4,12 @@
   height: 100px;
 } */
 
-.marquee {
+/* .marquee {
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
-  animation: marquee 2.5s linear infinite;
-}
+  animation: marquee 3s linear infinite;
+} */
 
 @keyframes marquee {
   0% {
@@ -97,7 +97,6 @@ body{
     height: 15.2em;
   }
 
-
   .carouselContainer{
     padding:10px;
   }
@@ -108,7 +107,7 @@ body{
   .addShopping{
 
     /* margin-top: 1em; */
-    padding:0px 5px 0px 5px
+    padding:0 5px 0px 5px
    
   }
 
@@ -117,7 +116,7 @@ body{
 
   .formItem h2{
     font-size: 1.7em;
-    /* padding-bottom: 15px; */
+    padding-bottom: 15px;
   
   }
   .inputFields{
@@ -135,34 +134,261 @@ body{
     overflow-y: auto;
   }
   .itemList{
-    font-size: 2em;
-    /* text-align: center; */
+    font-size: 1.2em;
+    text-align: center;
   }
   .itemNameIndex{
+    /* width: 20px; */
     text-align: center;
-    font-size: 1.2em;
   }
   .allItemImg{
     height: 8em;
     width: 100%;
-    padding: 0 70px 0 70px;;
+    padding: 0 30px 0 30px;
     /* display: flex;
     justify-content: center; */
   }
-
 
 }
 
 
 @media only screen and (max-width: 768px) and (min-width:426px){
+
+/* Form Element */
+.formItem h2{
+  font-size: 1.7em;
+  padding-bottom: 15px;
+
+}
+.inputFields{
+  margin-bottom:-10px;
+  padding: 5px 20px;
+}
+.createInput{
+  margin: 0px 60px 0px 60px;
+  opacity: 60%;
+}
+.buttonAdd{
+  padding:10px;
+  font-size:20px
+}
+.buttonMain{
+  padding:0px 20px 0px 20px;
+  margin-top:20px;
+}
+
+
   .formSale{
     display:grid;
-    grid-template-columns: 2fr 1.5fr;
+    grid-template-columns: 2fr 2fr;
   }
   .allItems{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
    
+  }
+  .allItemImg{
+    height: 10em;
+    width: 100%;
+    padding: 14px;
+    border-radius: 20px;
+
+  }
+  .itemNameIndex{
+    /* width: 20px; */
+    text-align: center;
+  }
+  .carouselImage{
+    min-height: 400px;
+    border-radius:20px;
+  }
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 7s linear infinite;
+  }
+  .itemList{
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .allItemImg:hover{
+    transform: scale(1.1);
+
+  }
+  .allItems{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    height: 21em;
+    overflow-y: auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width:769px){
+/* Nav///////////////////// */
+
+.shopify{
+  padding-left: 10px;
+}
+  /* Form Element */
+.formItem h2{
+  font-size: 1.5em;
+  /* padding-bottom: 15px; */
+
+}
+.inputFields{
+  /* margin:10px 0px 0px 0px; */
+  padding: 5px 25px 5px 25px ;
+}
+.createInput{
+  margin: 0px 60px 0px 60px;
+  opacity: 75%;
+}
+.buttonAdd{
+  padding:10px;
+  font-size:15px
+}
+.buttonMain{
+  padding:0px 20px 0px 20px;
+  /* margin-top:20px; */
+}
+
+
+  .formSale{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 450px;
+  }
+  .formItem{
+    height: 450px;
+  }
+  .allItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+  }
+  .allItemImg{
+    height: 10em;
+    width: 100%;
+    padding: 14px;
+    border-radius: 20px;
+
+  }
+  .itemNameIndex{
+    /* width: 20px; */
+    text-align: center;
+  }
+  .carouselImage{
+    height: 400px;
+    border-radius:20px;
+  }
+  .carouselContainer{
+    padding: 10px 0px 0px 10px;
+  }
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 7s linear infinite;
+  }
+  .itemList{
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .allItemImg:hover{
+    transform: scale(1.1);
+
+  }
+  .allItems{
+    display: grid;
+    height: 21em;
+    overflow-y: auto;
   }
 
 }
+
+
+@media only screen and (max-width: 1840px) and (min-width:1025px){
+  /* Nav///////////////////// */
+  
+  .shopify{
+    padding-left: 10px;
+  }
+    /* Form Element */
+  .formItem h2{
+    font-size: 1.5em;
+    /* padding-bottom: 15px; */
+  
+  }
+  .inputFields{
+    /* margin:10px 0px 0px 0px; */
+    padding: 5px 25px 5px 25px ;
+  }
+  .createInput{
+    margin: 0px 60px 0px 60px;
+    opacity: 75%;
+  }
+  .buttonAdd{
+    padding:10px;
+    font-size:15px
+  }
+  .buttonMain{
+    padding:0px 20px 0px 20px;
+    /* margin-top:20px; */
+  }
+  
+  
+    .formSale{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      height: 450px;
+    }
+    .formItem{
+      height: 450px;
+    }
+    .allItems{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     
+    }
+    .allItemImg{
+      height: 8em;
+      width: 100%;
+      padding: 8px;
+      border-radius: 20px;
+  
+    }
+    .itemNameIndex{
+      /* width: 20px; */
+      text-align: center;
+    }
+    .carouselImage{
+      height: 400px;
+      border-radius:20px;
+    }
+    .carouselContainer{
+      padding: 10px 0px 0px 10px;
+    }
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      animation: marquee 7s linear infinite;
+    }
+    .itemList{
+      font-size: 1.8em;
+      text-align: center;
+    }
+    .allItemImg:hover{
+      transform: scale(1.1);
+  
+    }
+    .allItems{
+      display: grid;
+      height: 21em;
+      overflow-y: auto;
+    }
+
+  }
