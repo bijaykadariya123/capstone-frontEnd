@@ -20,7 +20,7 @@ function Show (props){
         <UpdateForm/>
         <div>
             <Form method="post" action={`/delete/${item.id}`}>
-                <button>Delete</button>
+                <button className="px-2 py-1 rounded bg-green-900 hover:bg-green-600">Delete</button>
             </Form>
         </div>
     </>

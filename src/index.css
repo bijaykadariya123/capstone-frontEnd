@@ -1,22 +1,64 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.carouselImage{
+  width:15px;
+  height: 100px;
+}
+/* Animation for Create new item Form*------------------------------*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+.animate-typing {
+  display: inline-block;
+  overflow: hidden;
+  /*border-right: 12px solid transparent;  Adjust the border as needed */
+  white-space: nowrap;
+  animation: typing 2s steps(15, end) infinite;
+}
+/* ------------------------------------------END--------------------- */
+
+/* 
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Mohave', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Victor Mono', monospace;
+font-family: 'Young Serif', serif;
+*/
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 body{
   background-color: #000300;
-  color:red
+  color: white;
+}
+
+.addShopping{
+  width: 2000px;
+}
+
+.animate-typing{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+.formSale{
+  flex: 1 1 auto;
+}
+
+
+/* Media query */
+@media only screen and (max-width: 320px) and (min-width:220px){
+  .animate-typing{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+  }
 }
