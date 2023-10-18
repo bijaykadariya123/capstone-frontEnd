@@ -1,16 +1,9 @@
-/* 
-.carouselImage{
-  width:15px;
-  height: 100px;
-} */
 
-/* .marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  animation: marquee 3s linear infinite;
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Animation for Create new item Form*------------------------------*/
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -19,7 +12,6 @@
     transform: translateX(-100%);
   }
 }
-/* Animation for Create new item Form*------------------------------*/
 @keyframes typing {
   from {
     width: 0;
@@ -28,13 +20,27 @@
     width: 100%;
   }
 }
-
 .animate-typing {
   display: inline-block;
   overflow: hidden;
-  /*border-right: 12px solid transparent;  Adjust the border as needed */
   white-space: nowrap;
   animation: typing 2s steps(15, end) infinite;
+}
+.info:hover{
+  background-color: rgb(11, 11, 11);
+  cursor: pointer;
+  opacity: 50%;
+}
+.li-class, .li-class-1{
+  font-size: 10px;
+  line-height: 25px;
+  text-align: center;
+  color: grey;
+}
+.footer-text{
+  font-size: 15px;
+  font-weight: 500;
+  color:#00df9a;
 }
 /* ------------------------------------------END--------------------- */
 
@@ -46,11 +52,6 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Victor Mono', monospace;
 font-family: 'Young Serif', serif;
 */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 
 body{
@@ -75,15 +76,38 @@ body{
 .createInput{
   opacity: 60%;
 }
+/* Footer=================== */
+.foot {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+ background-color: rgba(67, 65, 65, 0.1);
+ padding:10px ;
+}
+
+.footerImg {
+  border-radius: 50%;
+  height: 8em;
+}
+
+.services, .logo, .notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
 /* Media query */
 @media only screen and (max-width: 425px) and (min-width:220px){
+  .foot{
+    display: none;
+  }
   .animate-typing{
     font-family: 'Roboto', sans-serif;
     /* font-size: 1.3em; */
   }
-  .shopify{
-    /* font-size: 1.2em; */
-  }
+
   .navBarright{
     /* font-size: 12px; */
     padding: 8px;
@@ -147,6 +171,60 @@ body{
     padding: 0 30px 0 30px;
     /* display: flex;
     justify-content: center; */
+  }
+  /* //////////////////////////////////////SHOW PAGE/////////////////////////////////////// */
+  .showImage{
+    display: block;
+    margin: 0 auto;
+    padding:2em;
+    width: 20em;
+    height:20em;
+    border-radius: 3em;
+  }
+  .showImage:hover{
+    opacity: 50%;
+  }
+  .showDetails{
+    margin-top: 0.5em;;
+  }
+
+  .detailInfo{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .tableDefination{
+    font-size: 1em;
+  }
+  .updateTitle{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0.5em;
+  }
+  .updateInput{
+    width: 15em;
+    display: block;
+    margin: 0 auto;
+  }
+  .allInputUpdate{
+    opacity: 50%;
+  }
+
+  .updateButton{
+    position: absolute;
+    margin-left:2em;
+    margin-top:0.5em;
+    font-size: 1.2em;
+  }
+  .deleteButton{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-right: 1.7em;
+    margin-bottom: 10.4em;
+    width: 5em;
+    font-size: 1.2em;
   }
 
 }
@@ -222,11 +300,128 @@ body{
     height: 21em;
     overflow-y: auto;
   }
+  /* //////////////////////////////////////SHOW PAGE/////////////////////////////////////// */
+  .showImage{
+    display: block;
+    margin: 0 auto;
+    padding:2em;
+    width: 30em;
+    height:30em;
+    border-radius: 3em;
+  }
+  .showImage:hover{
+    opacity: 50%;
+  }
+  .showDetails{
+    margin-top: 1em;
+  }
+
+  .detailInfo{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+
+  }
+  .tableDefination{
+    font-size: 1em;
+  }
+  .updateTitle{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .updateInput{
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+    padding: 0.3em;
+  }
+  .allInputUpdate{
+    opacity: 50%;
+  }
+
+  .updateButton{
+    position: absolute;
+    margin-left:8.2em;
+    bottom: 0;
+    margin-bottom:1.3em;
+    font-size: 1.2em;
+  }
+  .deleteButton{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-right: 7.7em;
+    margin-bottom: 1.3em;
+    width: 5em;
+    font-size: 1.2em;
+  }
+     /* //////////////////////////////////////SHOW PAGE/////////////////////////////////////// */
+     .showImage{
+      display: block;
+      margin: 0 auto;
+      padding:2em;
+      width: 80em;
+      height:30em;
+      border-radius: 3em;
+    }
+    .showImage:hover{
+      opacity: 50%;
+    }
+    .showDetails{
+      margin-top: 0.5em;;
+    }
+  
+    .detailInfo{
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1em;
+      height: 100%;
+    }
+    .tableDefination{
+      font-size: 1em;
+    }
+    .updateTitle{
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
+    .updateInput{
+      width: 20em;
+      display: block;
+      margin: 0 auto;
+      padding: 0.3em;
+    }
+    .allInputUpdate{
+      opacity: 50%;
+    }
+  
+    .updateButton{
+      position: absolute;
+      margin-left:8.2em;
+      bottom: 0;
+      margin-bottom:1.3em;
+      font-size: 1.2em;
+    }
+    .deleteButton{
+      position: absolute;
+      bottom: 0;
+      right:0;
+      margin-right: 7.7em;
+      margin-bottom: 1.3em;
+      width: 5em;
+      font-size: 1.2em;
+    }
+  
 
 
 }
 
-@media only screen and (max-width: 1024px) and (min-width:769px){
+@media only screen and (max-width: 1024px)and (min-width: 768px){
 /* Nav///////////////////// */
 
 .shopify{
@@ -306,6 +501,68 @@ body{
     height: 21em;
     overflow-y: auto;
   }
+   /* //////////////////////////////////////SHOW PAGE/////////////////////////////////////// */
+   .showDescriptionflex{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+   }
+   .showImage{
+    display: block;
+    margin: 0 auto;
+    padding:2em;
+    width: 80em;
+    height:40em;
+    border-radius: 3em;
+  }
+  .showImage:hover{
+    opacity: 50%;
+  }
+  .showDetails{
+    margin-top: 1.5em;
+  }
+
+  .detailInfo{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .tableDefination{
+    font-size: 1em;
+  }
+  .updateTitle{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .updateInput{
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+    padding: 0.3em;
+  }
+  .allInputUpdate{
+    opacity: 50%;
+  }
+
+  .updateButton{
+    position: absolute;
+    margin-left:8.2em;
+    bottom: 0;
+    margin-bottom:1.3em;
+    font-size: 1.2em;
+  }
+  .deleteButton{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-right: 7.7em;
+    margin-bottom: 1.3em;
+    width: 5em;
+    font-size: 1.2em;
+  }
+
 
 }
 
@@ -390,5 +647,66 @@ body{
       height: 21em;
       overflow-y: auto;
     }
+       /* //////////////////////////////////////SHOW PAGE/////////////////////////////////////// */
+   .showDescriptionflex{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+   }
+   .showImage{
+    display: block;
+    margin: 0 auto;
+    padding:2em;
+    width: 80em;
+    height:40em;
+    border-radius: 3em;
+  }
+  .showImage:hover{
+    opacity: 50%;
+  }
+  .showDetails{
+    margin-top: 1.5em;
+  }
+
+  .detailInfo{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .tableDefination{
+    font-size: 1em;
+  }
+  .updateTitle{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .updateInput{
+    width: 20em;
+    display: block;
+    margin: 0 auto;
+    padding: 0.3em;
+  }
+  .allInputUpdate{
+    opacity: 50%;
+  }
+
+  .updateButton{
+    position: absolute;
+    margin-left:8.2em;
+    bottom: 0;
+    margin-bottom:1.3em;
+    font-size: 1.2em;
+  }
+  .deleteButton{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-right: 7.7em;
+    margin-bottom: 1.3em;
+    width: 5em;
+    font-size: 1.2em;
+  }
 
   }

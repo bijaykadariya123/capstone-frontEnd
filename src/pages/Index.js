@@ -3,6 +3,7 @@ import Post from "../components/post";
 import Nav from "../components/nav";
 import Forms from "../components/form";
 import Carousel from "../components/carousel";
+import Footer from "../components/footer";
 
 
 function Index (props){
@@ -13,7 +14,7 @@ function Index (props){
         <Nav/>
         <div  className="formSale">
             <div className="carouselContainer">
-                <h2 className='animate-typing text-2xl carouselLabel'>Items on Sale</h2>
+                <h2 className='animate-typing text-2xl carouselLabel text-red-800'>Items on Sale !!!</h2>
                 <Carousel images={imagesArray} /> 
             </div>
             <Forms className="indexFormAll"/>     
@@ -23,6 +24,7 @@ function Index (props){
         <div  className="allItems">
             {items.map((item)=> {return <Post key = {item.id} item={item}/>})} 
         </div>
+        <Footer/>
 
         
 
@@ -31,3 +33,5 @@ function Index (props){
 }
 
 export default Index;
+
+
